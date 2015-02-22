@@ -1,0 +1,34 @@
+{
+	"name": "less-themeify",
+	"version": "1.0.0-alpha",
+	"description": "Generate a stylesheet from a LESS file that contains only theme information (colours etc.)",
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "mocha",
+		"build": "6to5 --experimental --optional selfContained src --out-dir lib",
+		"watch": "6to5 --experimental --optional selfContained src --watch --out-dir lib"
+	},
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/craga89/less-themeify"
+	},
+	"keywords": [
+		"less",
+		"theme",
+		"colour",
+		"variant"
+	],
+	"author": "Craig Michael Thompson",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/craga89/less-themeify/issues"
+	},
+	"homepage": "https://github.com/craga89/less-themeify",
+	"dependencies": {
+		"less": "^2.4.0",
+		"6to5-runtime": "^3.6.4"
+	},
+	"devDependencies": {
+		"6to5": "^3.6.4"
+	}
+}

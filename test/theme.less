@@ -1,0 +1,24 @@
+@import './import';
+
+@brand-primary: #fafafa;
+@brand-secondary: red;
+
+body{
+	padding: 10px;
+	background-color: @brand-primary;
+
+	a{
+		color: @brand-secondary;
+
+		&:first-child{
+			border: 1px solid darken(@brand-primary, 10%);
+		}
+
+		a{
+			padding: 10px;
+			margin: 0.1px;
+		}
+	}
+}
+
+@brand-primary: black;
